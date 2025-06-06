@@ -22,7 +22,7 @@
             height: 40px;
             width: 60px;
             background-color: red;
-            border: white;
+            border:5px solid white;
             border-radius: 10px;
             color: white;
             margin-left: -90px;
@@ -32,7 +32,7 @@
             height: 40px;
             width: 60px;
             background-color: red;
-            border: white;
+            border:5px solid white;
             border-radius: 10px;
             color: white;
             margin-left: 20px
@@ -60,7 +60,22 @@
     </div>
 
 
-    <script></script>
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX); 
+            var aleatorioY = Math;floor(Math.random() * maxY);
+
+            
+        }
+    </script>
 
 </body>
 </html>
