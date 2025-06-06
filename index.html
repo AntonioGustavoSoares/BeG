@@ -22,7 +22,7 @@
             height: 40px;
             width: 60px;
             background-color: red;
-            border:5px solid white;
+            border: 1px solid white;
             border-radius: 10px;
             color: white;
             margin-left: -90px;
@@ -32,7 +32,7 @@
             height: 40px;
             width: 60px;
             background-color: red;
-            border:5px solid white;
+            border:1px solid white;
             border-radius: 10px;
             color: white;
             margin-left: 20px
@@ -56,7 +56,7 @@
         <h5>Você aceita ser a minha namorada? ❤️</h5>
 
         <button id="sim">Sim!</button>
-        <button onmousemove="fuja()" id="nao">Não!</button>
+        <button onmouseover="fuja()" id="nao">Não!</button>
     </div>
 
 
@@ -71,9 +71,10 @@
             var maxY = alturaJanela - botaoNao.offsetHeight;
 
             var aleatorioX = Math.floor(Math.random() * maxX); 
-            var aleatorioY = Math;floor(Math.random() * maxY);
+            var aleatorioY = Math.floor(Math.random() * maxY);
 
-            
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
         }
     </script>
 
